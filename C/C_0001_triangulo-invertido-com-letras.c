@@ -4,7 +4,7 @@ Objetivo: receber uma palavra do usuário e imprimir na tela um triângulo inver
 
 Entrada: string dada pelo usuário
 
-Saída: triângulo inverdito de letras intercaladas com espaços
+Saída: triângulo invertido de letras intercaladas com espaços
 
 Algoritmo:
   1) criar uma nova palavra análoga à palavra dada, porém, com um espaço entre cada letra
