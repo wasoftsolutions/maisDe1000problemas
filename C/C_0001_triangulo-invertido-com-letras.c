@@ -9,7 +9,7 @@ Saída: triângulo invertido de letras intercaladas com espaços
 Algoritmo:
   1) criar uma nova palavra análoga à palavra dada, porém, com um espaço entre cada letra
   2) imprimir na tela a palavra espaçada (obtida na etapa 1)
-  3) retirar a ultima letra e o último espaço da palavra espaçada
+  3) retirar a última letra e o último espaço da palavra espaçada
   4) imprimir na tela a versão reduzida da palavra espaçada (obtida na etapa 2)
   5) repetir as etapas 3 e 4 até que só reste a primeira letra da palavra espaçada
 
@@ -70,7 +70,7 @@ void criar_palavra_com_espacos(char *palavra, char *palavra_espacada, int t){
       *palavra_espacada++ = ' ';                            //  o valor do endereço atual de palavra_espacada é preenchido com um espaço e o endereço é incrementado
     else {                                                  //se i for impar, então:
       *palavra_espacada++ = *palavra++;                     //  o valor do endereço atual de palavra_espacada é preenchido com a letra atual de palavra
-    }                                                       //  e o endereço é incrementado de ambos, palavra_espaca e palavra, são incrementados
+    }                                                       //  e o endereço é incrementado de ambos, palavra_espaca e palavra
   }
 
   *palavra_espacada = '\0';                                 //incluir o caractere de terminação '\0' no último endereço de palavra_espacada
@@ -78,7 +78,7 @@ void criar_palavra_com_espacos(char *palavra, char *palavra_espacada, int t){
 
 //função que reescreve a palavra espaçada eliminando a última letra e o espaço anterior a letra
 void reduzir_palavra_com_epacos(char *palavra_espacada, int t, int n){
-    *(palavra_espacada + (t - 2 * n)) = '\0';               //colocar o caractere de terminação '\0' duas posições abaixo da atual
+    *(palavra_espacada + (t - 2 * n)) = '\0';               //colocar o caractere de terminação '\0' duas posições abaixo da posição atual
 }                                                           // isso reduz um espaço e uma letra de palavra_espacada
 
 //função que imprime n espaços
