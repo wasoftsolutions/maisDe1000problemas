@@ -8,10 +8,11 @@ Saída: triângulo invertido de letras intercaladas com espaços
 
 Algoritmo:
   1) criar uma nova palavra análoga à palavra dada, porém, com um espaço entre cada letra
-  2) imprimir na tela a palavra espaçada (obtida na etapa 1)
+  2) imprimir na tela a palavra espaçada (obtida na etapa 1), e pular uma linha
   3) retirar a última letra e o último espaço da palavra espaçada
-  4) imprimir na tela a versão reduzida da palavra espaçada (obtida na etapa 2)
-  5) repetir as etapas 3 e 4 até que só reste a primeira letra da palavra espaçada
+  4) imprimir na tela k = 1 espaços, sem pular linha
+  5) imprimir na tela a versão reduzida da palavra espaçada (obtida na etapa 1), e pular linha
+  6) na n-ésima repetição, repetir as etapas 3, 4 e 5 até que só reste a primeira letra da palavra espaçada. Em 4, fazer k = n.
 
 Estratégia:
   1) usar um ponteiro e alocação de memória para guardar a palavra com espaços
