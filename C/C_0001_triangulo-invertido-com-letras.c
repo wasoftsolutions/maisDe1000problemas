@@ -12,7 +12,7 @@ Algoritmo:
   3) retirar a última letra e o último espaço da palavra espaçada
   4) imprimir na tela k = 1 espaços, sem pular linha
   5) imprimir na tela a versão reduzida da palavra espaçada (obtida na etapa 3), e pular linha
-  6) na n-ésima repetição, repetir as etapas 3, 4 e 5 até que só reste a primeira letra da palavra espaçada. Em 4, fazer k = n.
+  6) repetir as etapas 3, 4 e 5 até que só reste a primeira letra da palavra espaçada. Na n-ésima repetição, fazer k = n na etapa 4.
 
 Estratégia:
   1) usar um ponteiro e alocação de memória para guardar a palavra com espaços
