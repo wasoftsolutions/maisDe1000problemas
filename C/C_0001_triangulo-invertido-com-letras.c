@@ -66,7 +66,7 @@ int tamanho_da_palavra(char *palavra){
 //função que reescreve a palavra incluindo espaços entre as letras
 void criar_palavra_com_espacos(char *palavra, char *palavra_espacada, int t){
   for (int i = 0; i < t; i++) {                             //loop para escrever cada elemento da palavra com espaços
-    if (i % 2 & i != 0)                                     //se i for diferente de 0 e for par, então:
+    if ((i % 2) & (i != 0))                                 //se i for diferente de 0 e for par, então:
       *palavra_espacada++ = ' ';                            //  o valor do endereço atual de palavra_espacada é preenchido com um espaço e o endereço é incrementado
     else {                                                  //se i for impar, então:
       *palavra_espacada++ = *palavra++;                     //  o valor do endereço atual de palavra_espacada é preenchido com a letra atual de palavra
